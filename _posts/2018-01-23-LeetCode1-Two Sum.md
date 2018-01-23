@@ -9,7 +9,7 @@ catalog: true
 tags:
     - LeetCode
 ---
-# LeetCode 1.Two Sum 
+# LeetCode 1.Two Sum - Easy 
 
 # Description 
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
