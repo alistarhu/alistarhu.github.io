@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      5. Longest Palindromic Substring
+title:      LeetCode 5. Longest Palindromic Substring
 subtitle:   
 date:       2018-02-03
 author:     LeiHu
