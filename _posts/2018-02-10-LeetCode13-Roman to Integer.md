@@ -30,7 +30,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 class Solution {
 public:
     int romanToInt(string s) {
-        map<char,int> tab({{'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000}});
+        map<char,int> tab({ {'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000} });
         int res=tab[s[0]];
         for(int i=1;i<s.size();i++)
         {
