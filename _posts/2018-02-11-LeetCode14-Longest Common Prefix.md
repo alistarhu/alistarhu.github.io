@@ -29,22 +29,17 @@ public:
     string longestCommonPrefix(vector<string>& strs) {
         if(strs.size()==0)
             return "";
-        string res=strs[0];
-        for(int i=1;i<strs.size();i++)
+        // scan each char of the first string
+        for(int i=0;i<strs[0].size();i++)
         {
-            string cur_str=strs[i];
-            string prefix=res;
-            // calculate the prefix string between 'cur_str' and 'prefix' and store in res
-            res="";
-            for(int j=0;j<min(cur_str.size(),prefix.size());j++)
+            // compare with other string of the idx=i
+            for(int j=1;j<strs.size();j++)
             {
-                if(cur_str[j]==prefix[j])
-                    res=res+cur_str[j];
-                else
-                    break;
+                if(strs[j].size()==i||strs[j][i]!=strs[0][i])
+                    return strs[0].substr(0,i);
             }
         }
-        return res;
+        return strs[0];
     }
 };
 ```
