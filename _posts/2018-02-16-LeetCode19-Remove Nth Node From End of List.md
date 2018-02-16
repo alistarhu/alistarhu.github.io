@@ -9,7 +9,7 @@ catalog: true
 tags:
     - LeetCode
 ---
-# 19. Remove Nth Node From End of List
+# 19. Remove Nth Node From End of List - Medium
 
 # Description
 Given a linked list, remove the nth node from the end of list and return its head.
