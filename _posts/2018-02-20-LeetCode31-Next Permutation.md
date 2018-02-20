@@ -37,7 +37,7 @@ Inputs are in the left-hand column and its corresponding outputs are in the righ
 程序具体实现步骤：
 - step1:从后往前搜索，找到第一个满足`nums[i] < nums[i + 1]`的坐标，我们把它记作k。（我们所求的下一个排列数，在k这个位置上的数需要比原先稍微大一点点）
 - step2:从`k+1~nums.size()-1`,找一个刚刚比nums[k]大的数。由于`k+1~nums.size()-1`已经是非升序排列，我们直接从后往前搜索第一次比`nums[k]`大的数即为所求，它的坐标记为l
-- step3:将`nums[k]`和`nums[l]`进行交换，并将`k+1~nums.size()-1`的数字按照升序排列即可得到最终答案
+- step3:将`nums[k]`和`nums[l]`进行交换，并将`k+1~nums.size()-1`的数字按照升序排列(由于已经是降序，直接翻转得到升序)即可得到最终答案
 
 # Solution
 ```
@@ -58,6 +58,7 @@ public:
     	    reverse(nums.begin(), nums.end());
     	    return;
     	}
+        // Step2: find l
     	int l = -1;
     	for (int i = nums.size() - 1; i > k; i--) {
     		if (nums[i] > nums[k]) {
@@ -65,6 +66,7 @@ public:
     			break;
     		}
     	}
+        // Step3: swap and sort
     	swap(nums[k], nums[l]);
     	reverse(nums.begin() + k + 1, nums.end());
     }
