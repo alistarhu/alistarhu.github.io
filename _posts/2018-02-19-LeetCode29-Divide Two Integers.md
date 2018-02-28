@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      29. Divide Two Integers
+title:      LeetCode 29. Divide Two Integers
 subtitle:   
 date:       2018-02-19
 author:     LeiHu
