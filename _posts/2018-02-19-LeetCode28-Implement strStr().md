@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      28. Implement strStr()
+title:      LeetCode 28. Implement strStr()
 subtitle:   
 date:       2018-02-19
 author:     LeiHu
