@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      33. Search in Rotated Sorted Array
+title:      LeetCode 33. Search in Rotated Sorted Array
 subtitle:   
 date:       2018-02-20
 author:     LeiHu
