@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      24. Swap Nodes in Pairs
+title:      LeetCode 24. Swap Nodes in Pairs
 subtitle:   
 date:       2018-02-18
 author:     LeiHu
