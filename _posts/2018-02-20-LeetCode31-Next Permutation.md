@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      31. Next Permutation
+title:      LeetCode 31. Next Permutation
 subtitle:   
 date:       2018-02-20
 author:     LeiHu
