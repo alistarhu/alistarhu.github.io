@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      35. Search Insert Position
+title:      LeetCode 35. Search Insert Position
 subtitle:   
 date:       2018-02-21
 author:     LeiHu
