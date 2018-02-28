@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      22. Generate Parentheses
+title:      LeetCode 22. Generate Parentheses
 subtitle:   
 date:       2018-02-18
 author:     LeiHu
