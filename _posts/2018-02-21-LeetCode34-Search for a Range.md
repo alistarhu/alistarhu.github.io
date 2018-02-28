@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      34. Search for a Range
+title:      LeetCode 34. Search for a Range
 subtitle:   
 date:       2018-02-21
 author:     LeiHu
