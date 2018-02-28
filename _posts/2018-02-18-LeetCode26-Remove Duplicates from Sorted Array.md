@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      26. Remove Duplicates from Sorted Array
+title:      LeetCode 26. Remove Duplicates from Sorted Array
 subtitle:   
 date:       2018-02-18
 author:     LeiHu
