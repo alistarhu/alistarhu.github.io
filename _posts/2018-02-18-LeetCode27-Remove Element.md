@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      27. Remove Element
+title:      LeetCode 27. Remove Element
 subtitle:   
 date:       2018-02-18
 author:     LeiHu
