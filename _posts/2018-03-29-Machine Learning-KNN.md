@@ -30,7 +30,7 @@ tags:
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 $$ L_p(x_i,x_j)=( \sum_{l=1}^n | x_i^{(l)} - x_j^{(l)} |^p )^{\frac{1}{p}} $$
 
-<img src="http://latex.codecogs.com/gif.latex?L_p(x_i&space;,&space;x_j)=&space;(&space;\sum_{l=1}^{n}&space;|&space;x_{i}^{(l)}&space;-&space;x_{j}^{(l)}&space;|^{p}&space;)^&space;\frac{1}{p}" title="L_p(x_i , x_j)= ( \sum_{l=1}^{n} | x_{i}^{(l)} - x_{j}^{(l)} |^{p} )^ \frac{1}{p}" />
+
 
 当p=2时，为欧式距离；p=1时，为曼哈顿距离。当$L_p$距离的p取不同值时，计算出的距离会有所差别，由此得出的最近邻点也会不同。
 
