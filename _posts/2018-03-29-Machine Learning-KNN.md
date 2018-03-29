@@ -9,6 +9,7 @@ catalog: true
 tags:
     - Machine Learning
 ---
+#<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Introduction
 
@@ -26,11 +27,7 @@ tags:
 
 更为一般的，knn模型的特征空间一般是n维实数向量空间$\mathbb{R}^n$，可以采用$L_p$距离，$L_p$距离定义如下所示：
 
-
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 $$ L_p(x_i,x_j)=( \sum_{l=1}^n | x_i^{(l)} - x_j^{(l)} |^p )^{\frac{1}{p}} $$
-
-
 
 当p=2时，为欧式距离；p=1时，为曼哈顿距离。当$L_p$距离的p取不同值时，计算出的距离会有所差别，由此得出的最近邻点也会不同。
 
