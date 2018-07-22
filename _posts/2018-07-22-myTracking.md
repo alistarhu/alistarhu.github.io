@@ -202,7 +202,8 @@ $$ A^{reg}_{w\times h \times 4k}=[ \varphi(z)]_{reg} * [ \varphi(z)]_{reg} $$
 - 对于一个anchor box的中心点横纵坐标以及宽和高分别记作：$A_{x}$、$A_{y}$、$A_{w}$、$A_{h}$，ground truth box记作：$T_{x}$、$T_{y}$、$T_{w}$、$T_{h}$。
 - 那么四者的归一化距离分别定义为：$\delta[0]=\frac{T_{x}-A{x}}{A_{w}}$、$\delta[1]=\frac{T_{y}-A{y}}{A_{h}}$、$\delta[2]=\ln\frac{T_w}{A_w}$、$\delta[3]=\ln\frac{T_h}{A_h}$，
 - 则最终回归损失为 $L_{reg}=\sum_{i=0}^{3}smooth_{L1}(\delta[i],\sigma)$ 
-- 如下所示，其中$smooth_{L1}(x,\sigma)=\left \{ \begin{array}{l} 0.5\sigma^{2}x^{2}\ ,&\ |x| < \frac{1}{\sigma^{2}} \\ |x|-\frac{1}{2\sigma^{2}}\ ,&\ |x| \ge \frac{1}{\sigma^{2}} \end{array} \right.$
+- 如下所示，其中
+$$smooth_{L1}(x,\sigma)=\left \{ \begin{array}{l} 0.5\sigma^{2}x^{2}\ ,&\ |x| < \frac{1}{\sigma^{2}} \\ |x|-\frac{1}{2\sigma^{2}}\ ,&\ |x| \ge \frac{1}{\sigma^{2}} \end{array} \right.$$
 
 因此整体的损失函数定义为：$loss=L_{cls}+\lambda L_{reg}$
 
