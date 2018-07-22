@@ -37,7 +37,7 @@ MathJax.Hub.Config({
 
 SiameseFC算法开创性的将 **相似性学习(similarity learning problem)** 思想引入目标跟踪领域，该方法通过CNN构建Siamese网络，将模板与待检测图片进行滑动窗搜索比较，相似度较大的位置即为我们所跟踪的位置。模型的整体框架图如下所示：
 
-![](https://github.com/alistarhu/alistarhu.github.io/blob/master/img/SiameseFC.PNG)
+![siameseFC](https://github.com/alistarhu/alistarhu.github.io/blob/master/img/SiameseFC.PNG)
 
 该算法沿用了Siamese网络的思想—将两个待比较的图片由输入空间映射到目标空间，在目标空间使用简单的距离（欧式距离等）进行对比相似度。
 
