@@ -217,7 +217,7 @@ $$smooth_{L1}(x,\sigma)=\left \{ \begin{array}{l} 0.5\sigma^{2}x^{2}\ ,&\ |x| < 
 
 ![](https://github.com/alistarhu/alistarhu.github.io/blob/master/img/SiameseRPNdetec.PNG)
 
-检测流程与训练过程有些许不同，检测阶段，网络中模板帧与检测帧是分开的，**模板帧只会进行一次网络前向传播运算** 生成 $[ \varphi(z)]_{cls}$ 和 $[ \varphi(z)]_{reg}$ 两个特征图，即上图中的`weight for classification`和`weight for regression`,两者被存储下来以备后续跟踪检测使用。
+检测流程与训练过程有些许不同，检测阶段，网络中模板帧与检测帧是分开的，**模板帧只会进行一次网络前向传播运算** 生成 $[\varphi(z)]_{cls}$ 和 $[\varphi(z)]_{reg}$ 两个特征图，即上图中的`weight for classification`和`weight for regression`,两者被存储下来以备后续跟踪检测使用。
 
 检测分支会一帧一帧地都进行运算，并与模板的特征图做相关运算（卷积），从而得到最终的分类和回归结果。根据网络的输出可以得到网络预测出的所有框及其对应的分数，选出分数最高的框，即为最终网络预测的目标位置。
 
